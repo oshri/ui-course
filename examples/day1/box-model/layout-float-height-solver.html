@@ -1,34 +1,168 @@
 <html>
     <head>
         <title> UI | COURSE  - Box Model - layout float height solver</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,100' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../styles/font-awesome.css">
         <style>
+            *{
+                box-sizing: border-box;
+            }
 
+            .clear{
+                clear: both;
+            }
+
+            body{
+                font-size: 16px;
+                line-height: 19px;
+                font-family: "Roboto", sans-serif;
+                -webkit-font-smoothing: antialiased;
+                margin: 0;
+                padding: 0;
+                background-color: #F4F4F4;
+            }
+
+            .wrapper{
+                width: 900px;
+                margin: 0 auto;
+                background-color: pink;
+                padding: 10px;
+                /*overflow: hidden;*/
+            }
+
+            h1{
+                display: inline-block;
+            }
+
+            .box{
+                width: 200px;
+                border: 1px solid gray;
+                overflow: hidden;
+                padding: 10px;
+                float: left;
+                background-color: white;
+                margin: 10px;
+            }
+
+            img{
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            h2{
+                display: inline;
+            }
+
+            .starts{
+                display: inline;
+                float: right;
+            }
+
+            .fa-star{
+                color: gray;
+            }
+
+            .fa-star:hover{
+                color: black;
+                cursor: pointer;
+            }
+
+            .highlight{
+                color: black;
+            }
+
+            .footer{
+                padding: 10px;
+            }
         </style>
     </head>
     <body>
         <div class="wrapper">
             <div class="header">
-
+                <h1>The cute cat ever</h1>
             </div>
             <div class="content">
                 <div class="box">
-                    <img src="./images/cat-1.jpg">
-                    <span>Cat Name</span>
-                    <div class="rate">
-                        <span>3</span>
-                        <div class="starts">
-                            <span class="start highlight"></span>
-                            <span class="start"></span>
-                            <span class="start"></span>
-                            <span class="start"></span>
-                            <span class="start"></span>
-                            <span class="start"></span>
-                        </div>
+                    <img src="../images/cat1.gif">
+                    <h2>Cat Name</h2>
+                    <div class="starts">
+                        <span class="fa fa-star highlight"></span>
+                        <span class="fa fa-star highlight"></span>
+                        <span class="fa fa-star highlight"></span>
+                        <span class="fa fa-star highlight"></span>
+                        <span class="fa fa-star"></span>
                     </div>
                 </div>
+                <div class="box">
+                    <img src="../images/cat2.gif">
+                    <h2>Cat Name</h2>
+                    <div class="starts">
+                        <span class="fa fa-star highlight"></span>
+                        <span class="fa fa-star highlight"></span>
+                        <span class="fa fa-star highlight"></span>
+                        <span class="fa fa-star highlight"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="../images/cat3.gif">
+                    <h2>Cat Name</h2>
+                    <div class="starts">
+                        <span class="fa fa-star highlight"></span>
+                        <span class="fa fa-star highlight"></span>
+                        <span class="fa fa-star highlight"></span>
+                        <span class="fa fa-star highlight"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="../images/cat4.gif">
+                    <h2>Cat Name</h2>
+                    <div class="starts">
+                        <span class="fa fa-star highlight"></span>
+                        <span class="fa fa-star highlight"></span>
+                        <span class="fa fa-star highlight"></span>
+                        <span class="fa fa-star highlight"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="../images/cat5.gif">
+                    <h2>Cat Name</h2>
+                    <div class="starts">
+                        <span class="fa fa-star highlight"></span>
+                        <span class="fa fa-star highlight"></span>
+                        <span class="fa fa-star highlight"></span>
+                        <span class="fa fa-star highlight"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="../images/cat6.gif">
+                    <h2>Cat Name</h2>
+                    <div class="starts">
+                        <span class="fa fa-star highlight"></span>
+                        <span class="fa fa-star highlight"></span>
+                        <span class="fa fa-star highlight"></span>
+                        <span class="fa fa-star highlight"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="../images/cat7.gif">
+                    <h2>Cat Name</h2>
+                    <div class="starts">
+                        <span class="fa fa-star highlight"></span>
+                        <span class="fa fa-star highlight"></span>
+                        <span class="fa fa-star highlight"></span>
+                        <span class="fa fa-star highlight"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+                <div class="clear"></div>
             </div>
             <div class="footer">
-
+                2016 The cute cat ever.
             </div>
         </div>
     </body>
