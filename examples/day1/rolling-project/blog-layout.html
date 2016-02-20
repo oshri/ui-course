@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>UI | COURSE  - Blog </title>
+        <meta charset="UTF-8">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,100' rel='stylesheet' type='text/css'>
+        <!-- https://www.google.com/fonts#UsePlace:use/Collection:Roboto -->
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+
+            body{
+                font-size: 16px;
+                line-height: 19px;
+                font-family: "Roboto", sans-serif;
+                -webkit-font-smoothing: antialiased;
+                margin: 0;
+                padding: 0;
+                background-color: #F4F4F4;
+            }
+
+            /* Nice trick how to layout by see the 960 grid */
+            .grid-highlight{
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                opacity: 0.4;
+                background-image: url('../images/12_col.gif');
+                background-repeat: repeat-y;;
+                background-position: center;
+            }
+
+            .splash{
+                height: 534px;
+                background-image: url('./background.jpg');
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            .logo{
+                font-weight: 700;
+                font-size: 80px;
+                line-height: 80px;
+                color: #ffffff;
+                margin: auto;
+                width: 439px;
+                padding-top: 145px;
+            }
+
+            .logo span{
+                font-weight: 300;
+                opacity: 0.5;
+            }
+
+            .logo span::before{
+                content: '|';
+                font-weight: 100;
+                line-height: 110px;
+                font-size: 110px;
+                padding-right: 12px;
+            }
+
+            .content{
+                padding: 10px;
+                width: 960px;
+                margin: 0 auto;
+                min-height: 400px;
+            }
+
+            .fotter{
+                height: 402px;
+                background-color: #3F51B4;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="grid-highlight"></div>
+        <div class="blog-container">
+            <div class="splash">
+                <div class="logo">
+                    UI
+                    <span>COURSE</span>
+                </div>
+            </div>
+            <div class="content">
+                Content
+            </div>
+            <div class="fotter">
+
+            </div>
+        </div>
+    </body>
+</html>

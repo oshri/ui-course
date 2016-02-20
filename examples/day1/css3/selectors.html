@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title> UI | COURSE  - Selectors</title>
+        <meta name="description" content="">
+        <style>
+            ul{
+                width: 600px;
+                margin: 0 auto;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            li.card{
+                list-style: none;
+                width: 190px;
+                height: 200px;
+                line-height: 200px;
+                text-align: center;
+                background-color: gray;
+                float: left;
+                margin: 5px;
+                color: white;
+            }
+
+
+            /*.card:first-child{
+                background-color:red;
+            }
+
+            .card:last-child{
+                background-color:red;
+            }*/
+
+            /*.card:nth-child(2n){
+                background-color:red;
+            }*/
+
+            .card:nth-child(3n){
+                background-color:red;
+            }
+
+
+        </style>
+    </head>
+    <body>
+    <ul>
+      <li class="card">
+          <h3>HTML</h3>
+      </li>
+      <li class="card">
+          <h3>CSS</h3>
+      </li>
+      <li class="card">
+          <h3>JAVASCRIPT</h3>
+      </li>
+      <li class="card">
+          <h3>FRAMEWORKS</h3>
+      </li>
+      <li class="card">
+          <h3>BOWER</h3>
+      </li>
+      <li class="card">
+          <h3>GIT</h3>
+      </li>
+    </ul>
+    </body>
+</html>

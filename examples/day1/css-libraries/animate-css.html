@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title> UI | COURSE  - Css Libraries - Animate.css</title>
+        <meta name="description" content="">
+        <link rel="stylesheet" href="../styles/animate.css">
+        <link rel="stylesheet" href="../styles/hover.css">
+    </head>
+    <style>
+        *:focus {
+            outline: none;
+        }
+        /*.box{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }*/
+        button{
+            border: 2px solid #f35626;
+            line-height: 1.375;
+            font-weight: 700;
+            color: #f35626;
+            cursor: pointer;
+            -webkit-animation: hue 60s infinite linear;
+            padding: 10px;
+            background-color: transparent;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .animated-box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid #f35626;
+            border-radius: 4px;
+
+            /* 1. Animation timem from start to end */
+            /*-webkit-animation-duration: 3s;*/
+
+             /* 2. Wait before start */
+            /*-webkit-animation-delay: 3s;*/
+
+            /* 3. Repeat animation: default:1 */
+            /*-webkit-animation-iteration-count: infinite;*/
+        }
+    </style>
+    <body>
+        <!-- <div class="box animated fadeInLeftBig">
+            text
+        </div> -->
+        <button type="button" name="button" class="hvr-grow">Animate</button>
+        <div class="animated-box"></div>
+
+        <script src="../javascript/jquery-1.12.0.js"></script>
+        <script>
+            $(function(){
+                var button = $('button');
+                var box = $('.animated-box');
+                var animationClass = 'animated bounceOutRight';
+                var animatedEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
+                // button.on('click', function(){
+                //     box.addClass(animationClass);
+                // });
+                button.on('click', function(){
+                    box.addClass(animationClass).one(animatedEndEvents, function(){
+                        $(this).removeClass(animationClass);
+                    });
+                });
+
+            });
+        </script>
+    </body>
+</html>

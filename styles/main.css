@@ -1,0 +1,21 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.logo{
+    font-weight: 400;
+    font-size: 80px;
+}
+
+.logo span{
+    font-weight: 300;
+}

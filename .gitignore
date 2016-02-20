@@ -1,0 +1,15 @@
+
+# Ignore Node, Bower & TSD
+##########################
+node_modules
+bower_components
+
+# Ignore Web Storm #
+.idea
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db

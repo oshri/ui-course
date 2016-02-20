@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title> UI | COURSE  - CSS3 - Question 1</title>
+        <meta name="description" content="">
+        <style>
+            .box{
+                width: 200px;
+                height: 200px;
+                text-align: center;
+                line-height: 200px;
+                font-size: 20px;
+                margin: 0 auto;
+            }
+
+            .box::before{
+                background-color: #5FD4EF;
+                content: 'box 1';
+                width: 200px;
+                height: 200px;
+                display: inline-block;
+            }
+
+            .box::after{
+                background-color: #138EAB;
+                content: 'box 3';
+                width: 200px;
+                height: 200px;
+                display: inline-block;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="box">box 2</div>
+    </body>
+</html>
